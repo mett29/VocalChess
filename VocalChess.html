@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./js/css/chessboard.css">
+    </head>
+<body>
+    <div>
+        <h1>Play chess with your voice</h1>
+        <p><b>Description: </b>in order to move a piece you have to pronounce the coordinates of the starting position followed by the ones of the target position, e.g. "b1 a3".</p>
+        <p>Right now, the commands are in italian. If you want, you can switch the <i>recognition.lang</i> parameter in <i>cinnamon.js</i> to 'en-US', but it does not work properly.</p>
+        
+        <div id="board" style="width: 400px;"></div>
+        <p>Status: <span id="status"></span></p>
+        <p>FEN: <span id="fen"></span></p>
+        <p>PGN: <span id="pgn"></span></p>
+        <input id="startPositionBtn" value="Reset Game" type="button">
+        <input id="startListeningBtn" value="Start Listening" type="button">
+
+        <div id="log"></div>
+
+        <h3>Libraries and references:</h3><hr>
+        <ul>
+            <li>Chess engine: <a href="http://cinnamonchess.altervista.org/">Cinnamon 2.2a</a></li>
+            <li>Chess logic: <a href="https://github.com/jhlywa/chess.js">Chess.js</a></li>
+            <li>Chessboard visualization: <a href="https://chessboardjs.com/">Chessboard.js</a></li>
+        </ul>
+
+        <script src="./js/cinnamon_2.2a.js"></script>
+        <script src="./js/chess.js"></script>
+        <script src="./js/json3.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="./js/chessboard-1.0.0.min.js"></script>
+        <script src="./js/cinnamon.js"></script>
+    </div>
+</body>
+</html>
